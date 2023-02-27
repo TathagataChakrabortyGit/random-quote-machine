@@ -1,0 +1,6 @@
+* {
+  transition: all 0.7s ease-in-out;
+}
+.page-setup {
+  min-height: 100vh;
+}
