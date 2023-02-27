@@ -62,8 +62,9 @@ const App = () => {
               <div className="d-flex justify-content-between">
                 <button
                   id="new-quote"
-                  className="btn btn-primary m-2"
+                  className="btn m-2"
                   onClick={getNewQuotes}
+                  style={getColor}
                 >
                   New Quote
                 </button>
@@ -73,6 +74,7 @@ const App = () => {
                     className="btn"
                     target="_blank"
                     id="tweet-quote"
+                    style={getColor}
                     href={
                       "https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text=" +
                       encodeURIComponent(quoteData)
@@ -83,6 +85,7 @@ const App = () => {
                   <a
                     className="btn"
                     target="_blank"
+                    style={getColor}
                     href={
                       "https://www.tumblr.com/widgets/share/tool?posttype=quote&amp;tags=quotes,freecodecamp&amp;caption=Maya%20Angelou&amp;content=" +
                       encodeURIComponent(quoteData)
